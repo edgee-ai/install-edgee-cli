@@ -1,6 +1,8 @@
 name: "Install Edgee's CLI"
 description: "Install edgee from www.github.com/edgee-cloud/cli"
 author: "edgee-cloud"
+icon: "download"
+color: "gray-dark"
 
 inputs:
   build:
