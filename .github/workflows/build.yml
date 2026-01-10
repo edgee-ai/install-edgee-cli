@@ -1,4 +1,4 @@
-name: "Test Setup Edgee Action"
+name: "Test Setup Edgee Action (Build)"
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Test Setup Edgee Action
+      - name: Test Setup Edgee Action (Build)
         uses: ./
         with:
           build: true
