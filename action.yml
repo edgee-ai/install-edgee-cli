@@ -1,5 +1,5 @@
 name: "Install Edgee's CLI"
-description: "Install edgee from www.github.com/edgee-cloud/edgee"
+description: "Install edgee from www.github.com/edgee-cloud/cli"
 author: "edgee-cloud"
 
 inputs:
@@ -24,9 +24,9 @@ runs:
     - name: Clone and Build Edgee
       if: inputs.build == 'true'
       run: |
-        git clone https://github.com/edgee-cloud/edgee.git
-        cd edgee
-        cargo build
+        git clone https://github.com/edgee-cloud/cli.git
+        cd cli
+        cargo build --bin edgee --release
         mv ./target/debug/edgee /usr/local/bin/
         echo "Edgee built and added to path"
       shell: bash

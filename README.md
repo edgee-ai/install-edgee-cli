@@ -29,7 +29,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install Edgee
-        uses: edgee-cloud/install-edgee-action@v0.1.0-beta
+        uses: edgee-cloud/install-edgee-action@v1.0.0
 
       - name: Build
         run: |
