@@ -4,7 +4,7 @@
 This GitHub Action automates the process of installing Edgee CLI's, building and testing Edgee components
 
 ## Features
-- Installs the Edgee CLI via the `edgee-cloud/install-edgee-cli`.
+- Installs the Edgee CLI via the `edgee-ai/install-edgee-cli`.
 
 ## Example Usage
 To use this action in your GitHub workflows, add the following to your `.github/workflows/build.yml` file:
@@ -29,7 +29,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install Edgee
-        uses: edgee-cloud/install-edgee-action@v1.0.0
+        uses: edgee-ai/install-edgee-action@v1.0.0
 
       - name: Build
         run: |
