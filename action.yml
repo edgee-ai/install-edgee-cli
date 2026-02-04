@@ -1,6 +1,6 @@
 name: "Install Edgee's CLI"
-description: "Install edgee from www.github.com/edgee-cloud/cli"
-author: "edgee-cloud"
+description: "Install edgee from www.github.com/edgee-ai/cli"
+author: "edgee-ai"
 icon: "download"
 color: "gray-dark"
 
@@ -26,7 +26,7 @@ runs:
     - name: Clone and Build Edgee
       if: inputs.build == 'true'
       run: |
-        git clone https://github.com/edgee-cloud/cli.git
+        git clone https://github.com/edgee-ai/cli.git
         cd cli
         cargo build --bin edgee --release
         mv ./target/release/edgee /usr/local/bin/
@@ -36,7 +36,7 @@ runs:
     - name: Install Edgee
       if: inputs.build == 'false'
       run: |
-        curl https://install.edgee.cloud | sh
+        curl https://install.edgee.ai | sh
         mv edgee /usr/local/bin/
         echo "Edgee downloaded and added to path"
       shell: bash
